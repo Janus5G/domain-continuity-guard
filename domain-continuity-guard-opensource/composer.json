@@ -1,0 +1,46 @@
+{
+  "name": "domain-continuity-guard/domain-continuity-guard",
+  "description": "Protect webmail, hosting and SaaS accounts from domain-recycling takeover after domain expiry or transfer.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "domain-security",
+    "dns",
+    "dnssec",
+    "account-recovery",
+    "webmail",
+    "hosting",
+    "identity",
+    "anti-takeover"
+  ],
+  "homepage": "https://github.com/domain-continuity-guard/domain-continuity-guard",
+  "support": {
+    "issues": "https://github.com/domain-continuity-guard/domain-continuity-guard/issues"
+  },
+  "require": {
+    "php": ">=8.1",
+    "ext-pdo": "*",
+    "ext-sodium": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0 || ^11.0",
+    "squizlabs/php_codesniffer": "^3.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "DomainContinuityGuard\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DomainContinuityGuard\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "lint": "php -l src/DomainContinuityGuard.php",
+    "test": "phpunit",
+    "cs": "phpcs --standard=PSR12 src examples tests"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

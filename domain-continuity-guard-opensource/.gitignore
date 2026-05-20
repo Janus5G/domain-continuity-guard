@@ -1,0 +1,14 @@
+/vendor/
+/.phpunit.cache/
+/.idea/
+/.vscode/
+*.log
+.env
+.env.*
+!.env.example
+coverage/
+build/
+dist/
+*.zip
+.DS_Store
+Thumbs.db
